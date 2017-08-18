@@ -17,6 +17,10 @@ let address = country + ", " + county
 let interpolatedAddress = "\(country), \(county)"
 let interpolatedStreetAddress = "\(buildingNumber), \(street)"
 
+let name = "Linda"
+let hello = "Hi there"
+let greeting = "\(hello), \(name)."
+
 /*
  ------------
  Integers
