@@ -55,3 +55,21 @@ func carpetCostHaving(length: Int, width: Int ,carpetColor color: String = "tan"
 
 let result =  carpetCostHaving(length: 10, width: 20)
 print(result) //Prints Cost and Color
+
+// Scope
+
+//Variables inside scope can have the same name
+func arrayModifier(array: [Int]) {
+    //These variables are called local variables
+    var arrayOfInts = array
+    arrayOfInts.append(5)
+    
+    var secondArray = arrayOfInts
+}
+
+//These variables are called global variables
+var arrayOfInts = [1,2,3,4]
+arrayModifier(array: arrayOfInts)
+arrayOfInts
+
+
